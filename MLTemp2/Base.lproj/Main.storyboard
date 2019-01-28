@@ -183,7 +183,7 @@
                                     <constraint firstAttribute="height" constant="50" id="QtK-eg-Qyl"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
-                                <state key="normal" title="Offline Recognition">
+                                <state key="normal" title="Offline Image Recognition">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -222,7 +222,7 @@
                                     <constraint firstAttribute="height" constant="50" id="91e-eN-7R5"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
-                                <state key="normal" title="Live Recognition">
+                                <state key="normal" title="Live Image Recognition">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -236,7 +236,7 @@
                                     <constraint firstAttribute="height" constant="50" id="Ur7-gn-PYX"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
-                                <state key="normal" title="Online Recognition">
+                                <state key="normal" title="Online Image Recognition">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
