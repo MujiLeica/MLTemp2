@@ -152,23 +152,23 @@
             </objects>
             <point key="canvasLocation" x="2949.5999999999999" y="1557.5712143928038"/>
         </scene>
-        <!--View Controller-->
+        <!--Home Screen View Controller-->
         <scene sceneID="40e-XM-ZVm">
             <objects>
-                <viewController id="EAe-CU-4JQ" sceneMemberID="viewController">
+                <viewController id="EAe-CU-4JQ" customClass="HomeScreenViewController" customModule="MLTemp2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1PI-lO-OwY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B3U-kE-zrh">
-                                <rect key="frame" x="10" y="74" width="355" height="60"/>
+                                <rect key="frame" x="10" y="84" width="355" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="b2M-xo-aM7"/>
                                 </constraints>
                                 <attributedString key="attributedText">
                                     <fragment content="Welcome to BirdReco">
                                         <attributes>
-                                            <color key="NSColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="NSColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="36" name="SnellRoundhand-Bold"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
@@ -177,79 +177,119 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sfc-a2-gmc">
-                                <rect key="frame" x="10" y="184" width="355" height="50"/>
-                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="10" y="194" width="355" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="QtK-eg-Qyl"/>
                                 </constraints>
-                                <state key="normal" title="Offline Recognition"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                <state key="normal" title="Offline Recognition">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="fI7-6K-I21"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KKw-SI-ec3">
-                                <rect key="frame" x="10" y="254" width="355" height="50"/>
-                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="Ur7-gn-PYX"/>
-                                </constraints>
-                                <state key="normal" title="Online Recognition"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FYn-X3-Mln">
-                                <rect key="frame" x="10" y="394" width="355" height="50"/>
-                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="10" y="334" width="355" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Sjh-lX-xvx"/>
                                 </constraints>
-                                <state key="normal" title="Bird Data"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                <state key="normal" title="Bird Data">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="d1G-V5-xy4" kind="show" id="Ni6-Lo-lhW"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xh6-tc-CiN">
-                                <rect key="frame" x="10" y="324" width="355" height="50"/>
-                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="10" y="404" width="355" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="PrZ-Up-j2t"/>
                                 </constraints>
-                                <state key="normal" title="Sound Recognition"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                <state key="normal" title="Sound Recognition">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T2g-RB-SJh">
-                                <rect key="frame" x="10" y="464" width="355" height="50"/>
-                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="10" y="264" width="355" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="91e-eN-7R5"/>
                                 </constraints>
-                                <state key="normal" title="Live Recognition"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                <state key="normal" title="Live Recognition">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="a2j-Hz-Hpy" kind="show" id="FOl-I6-h3q"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KKw-SI-ec3">
+                                <rect key="frame" x="10" y="474" width="355" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Ur7-gn-PYX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                <state key="normal" title="Online Recognition">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blue buttons are ready to use" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M2W-ka-wVG">
+                                <rect key="frame" x="10" y="596.5" width="355" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Red buttons are waiting to be implemented by Chang and Ran in semester 1 2019" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BS1-zp-IlX">
+                                <rect key="frame" x="10" y="623.5" width="355" height="33.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="xdz-Vl-XVH" firstAttribute="trailing" secondItem="xh6-tc-CiN" secondAttribute="trailing" constant="10" id="1RU-Xh-Pab"/>
                             <constraint firstItem="xdz-Vl-XVH" firstAttribute="trailing" secondItem="T2g-RB-SJh" secondAttribute="trailing" constant="10" id="23O-xs-FJH"/>
                             <constraint firstItem="Sfc-a2-gmc" firstAttribute="top" secondItem="B3U-kE-zrh" secondAttribute="bottom" constant="50" id="5wf-pa-ajk"/>
-                            <constraint firstItem="T2g-RB-SJh" firstAttribute="top" secondItem="FYn-X3-Mln" secondAttribute="bottom" constant="20" id="A0T-LW-ZUu"/>
-                            <constraint firstItem="KKw-SI-ec3" firstAttribute="top" secondItem="Sfc-a2-gmc" secondAttribute="bottom" constant="20" id="Bbe-We-eUt"/>
-                            <constraint firstItem="FYn-X3-Mln" firstAttribute="top" secondItem="xh6-tc-CiN" secondAttribute="bottom" constant="20" id="CIC-3p-aAK"/>
+                            <constraint firstItem="xh6-tc-CiN" firstAttribute="top" secondItem="FYn-X3-Mln" secondAttribute="bottom" constant="20" id="8A4-kG-Ese"/>
                             <constraint firstItem="Sfc-a2-gmc" firstAttribute="leading" secondItem="xdz-Vl-XVH" secondAttribute="leading" constant="10" id="F3z-KL-O1m"/>
+                            <constraint firstItem="FYn-X3-Mln" firstAttribute="top" secondItem="T2g-RB-SJh" secondAttribute="bottom" constant="20" id="FMQ-7U-PkW"/>
+                            <constraint firstItem="BS1-zp-IlX" firstAttribute="leading" secondItem="xdz-Vl-XVH" secondAttribute="leading" constant="10" id="Gnr-YU-vbo"/>
                             <constraint firstItem="xh6-tc-CiN" firstAttribute="leading" secondItem="xdz-Vl-XVH" secondAttribute="leading" constant="10" id="H6o-Y5-TY1"/>
-                            <constraint firstItem="B3U-kE-zrh" firstAttribute="top" secondItem="xdz-Vl-XVH" secondAttribute="top" constant="10" id="LWx-cy-wVn"/>
+                            <constraint firstItem="B3U-kE-zrh" firstAttribute="top" secondItem="xdz-Vl-XVH" secondAttribute="top" constant="20" id="JZ8-U0-uYP"/>
+                            <constraint firstItem="BS1-zp-IlX" firstAttribute="top" secondItem="M2W-ka-wVG" secondAttribute="bottom" constant="10" id="Jx2-ul-WIt"/>
                             <constraint firstItem="FYn-X3-Mln" firstAttribute="leading" secondItem="xdz-Vl-XVH" secondAttribute="leading" constant="10" id="MDb-7M-PdE"/>
+                            <constraint firstItem="M2W-ka-wVG" firstAttribute="leading" secondItem="xdz-Vl-XVH" secondAttribute="leading" constant="10" id="OkC-uV-MBH"/>
                             <constraint firstItem="KKw-SI-ec3" firstAttribute="leading" secondItem="xdz-Vl-XVH" secondAttribute="leading" constant="10" id="RQh-3y-WLy"/>
                             <constraint firstItem="xdz-Vl-XVH" firstAttribute="trailing" secondItem="Sfc-a2-gmc" secondAttribute="trailing" constant="10" id="Vay-qK-Nqg"/>
                             <constraint firstItem="B3U-kE-zrh" firstAttribute="leading" secondItem="xdz-Vl-XVH" secondAttribute="leading" constant="10" id="YHY-if-sHk"/>
                             <constraint firstItem="xdz-Vl-XVH" firstAttribute="trailing" secondItem="KKw-SI-ec3" secondAttribute="trailing" constant="10" id="bme-jU-Psc"/>
-                            <constraint firstItem="xh6-tc-CiN" firstAttribute="top" secondItem="KKw-SI-ec3" secondAttribute="bottom" constant="20" id="g8u-7f-Lyn"/>
+                            <constraint firstAttribute="trailing" secondItem="BS1-zp-IlX" secondAttribute="trailing" constant="10" id="ciC-TU-26h"/>
                             <constraint firstItem="T2g-RB-SJh" firstAttribute="leading" secondItem="xdz-Vl-XVH" secondAttribute="leading" constant="10" id="j2i-21-iMA"/>
                             <constraint firstItem="xdz-Vl-XVH" firstAttribute="trailing" secondItem="FYn-X3-Mln" secondAttribute="trailing" constant="10" id="jy2-3f-3ft"/>
+                            <constraint firstItem="T2g-RB-SJh" firstAttribute="top" secondItem="Sfc-a2-gmc" secondAttribute="bottom" constant="20" id="ldW-Np-lXP"/>
                             <constraint firstItem="xdz-Vl-XVH" firstAttribute="trailing" secondItem="B3U-kE-zrh" secondAttribute="trailing" constant="10" id="nOq-A1-f8C"/>
+                            <constraint firstItem="xdz-Vl-XVH" firstAttribute="trailing" secondItem="M2W-ka-wVG" secondAttribute="trailing" constant="10" id="qfm-4e-vEi"/>
+                            <constraint firstItem="xdz-Vl-XVH" firstAttribute="bottom" secondItem="BS1-zp-IlX" secondAttribute="bottom" constant="10" id="ubg-Vh-ikl"/>
+                            <constraint firstItem="KKw-SI-ec3" firstAttribute="top" secondItem="xh6-tc-CiN" secondAttribute="bottom" constant="20" id="vDM-HL-QF0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="xdz-Vl-XVH"/>
                     </view>
                     <navigationItem key="navigationItem" id="uuH-me-Ftf"/>
+                    <connections>
+                        <outlet property="birdDataButton" destination="FYn-X3-Mln" id="TNI-Zw-nSs"/>
+                        <outlet property="liveRecoButton" destination="T2g-RB-SJh" id="WQJ-rx-hSk"/>
+                        <outlet property="offlineRecoButton" destination="Sfc-a2-gmc" id="Atp-mf-Lgo"/>
+                        <outlet property="onlineRecoButton" destination="KKw-SI-ec3" id="daf-PN-c9z"/>
+                        <outlet property="soundRecoButton" destination="xh6-tc-CiN" id="OyV-qw-8gE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IVX-Nd-0i0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

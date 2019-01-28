@@ -10,6 +10,7 @@
 		637C930921CFC88600AEEC11 /* LiveRecognitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637C930821CFC88600AEEC11 /* LiveRecognitionViewController.swift */; };
 		637F17C921F9F8540022BFAE /* BirdDataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637F17C821F9F8540022BFAE /* BirdDataTableViewController.swift */; };
 		637F17CB21F9FA9A0022BFAE /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637F17CA21F9FA9A0022BFAE /* WebViewController.swift */; };
+		63AF384521FF13A300F2DD1B /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AF384421FF13A300F2DD1B /* HomeScreenViewController.swift */; };
 		63E4DFCE21CB89B200A1782D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4DFCD21CB89B200A1782D /* AppDelegate.swift */; };
 		63E4DFD021CB89B200A1782D /* CoreMLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4DFCF21CB89B200A1782D /* CoreMLViewController.swift */; };
 		63E4DFD321CB89B200A1782D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63E4DFD121CB89B200A1782D /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 		637C930821CFC88600AEEC11 /* LiveRecognitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveRecognitionViewController.swift; sourceTree = "<group>"; };
 		637F17C821F9F8540022BFAE /* BirdDataTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdDataTableViewController.swift; sourceTree = "<group>"; };
 		637F17CA21F9FA9A0022BFAE /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		63AF384421FF13A300F2DD1B /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		63E4DFCA21CB89B200A1782D /* MLTemp2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MLTemp2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63E4DFCD21CB89B200A1782D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63E4DFCF21CB89B200A1782D /* CoreMLViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMLViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				637F17C821F9F8540022BFAE /* BirdDataTableViewController.swift */,
 				637C930821CFC88600AEEC11 /* LiveRecognitionViewController.swift */,
 				637F17CA21F9FA9A0022BFAE /* WebViewController.swift */,
+				63AF384421FF13A300F2DD1B /* HomeScreenViewController.swift */,
 				63E4DFD121CB89B200A1782D /* Main.storyboard */,
 				63E4DFD421CB89B300A1782D /* Assets.xcassets */,
 				63E4DFD621CB89B300A1782D /* LaunchScreen.storyboard */,
@@ -153,6 +156,7 @@
 				63E4DFE021CB8BB400A1782D /* BirdClassifier.mlmodel in Sources */,
 				637C930921CFC88600AEEC11 /* LiveRecognitionViewController.swift in Sources */,
 				63E4DFCE21CB89B200A1782D /* AppDelegate.swift in Sources */,
+				63AF384521FF13A300F2DD1B /* HomeScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
