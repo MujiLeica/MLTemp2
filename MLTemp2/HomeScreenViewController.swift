@@ -7,14 +7,18 @@
 //
 
 import UIKit
+import CoreLocation
 
-class HomeScreenViewController: UIViewController {
+class HomeScreenViewController: UIViewController, CLLocationManagerDelegate {
 
     @IBOutlet weak var offlineRecoButton: UIButton!
     @IBOutlet weak var liveRecoButton: UIButton!
     @IBOutlet weak var birdDataButton: UIButton!
     @IBOutlet weak var soundRecoButton: UIButton!
     @IBOutlet weak var onlineRecoButton: UIButton!
+    
+    let locationManager: CLLocationManager = CLLocationManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let radius = offlineRecoButton.frame.height / 4
@@ -23,6 +27,9 @@ class HomeScreenViewController: UIViewController {
         birdDataButton.layer.cornerRadius = radius
         soundRecoButton.layer.cornerRadius = radius
         onlineRecoButton.layer.cornerRadius = radius
+        
+        locationManager.delegate = self
+        locationManager.requestWhenInUseAuthorization()
         
     }
     

@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>BirdReco wants to use your location to load the most accuracy image recognition model.</string>
 	<key>NSCameraUsageDescription</key>
 	<string>The App needs to access camera for bird recognition</string>
 	<key>NSPhotoLibraryUsageDescription</key>
