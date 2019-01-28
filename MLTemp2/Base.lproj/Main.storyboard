@@ -126,27 +126,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qJW-Nf-HxI">
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="43o-sL-nvw">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </webView>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="VYC-XL-n03" firstAttribute="trailing" secondItem="qJW-Nf-HxI" secondAttribute="trailing" id="FhH-Mh-MJZ"/>
-                            <constraint firstItem="qJW-Nf-HxI" firstAttribute="top" secondItem="VYC-XL-n03" secondAttribute="top" id="Rf6-8V-Np1"/>
-                            <constraint firstItem="VYC-XL-n03" firstAttribute="bottom" secondItem="qJW-Nf-HxI" secondAttribute="bottom" id="bzG-fv-8OH"/>
-                            <constraint firstItem="qJW-Nf-HxI" firstAttribute="leading" secondItem="VYC-XL-n03" secondAttribute="leading" id="xmj-Gg-IkB"/>
+                            <constraint firstItem="43o-sL-nvw" firstAttribute="top" secondItem="VYC-XL-n03" secondAttribute="top" id="6GK-gq-Vpb"/>
+                            <constraint firstItem="43o-sL-nvw" firstAttribute="bottom" secondItem="VYC-XL-n03" secondAttribute="bottom" id="Vf8-7V-iOX"/>
+                            <constraint firstItem="43o-sL-nvw" firstAttribute="leading" secondItem="VYC-XL-n03" secondAttribute="leading" id="t1U-bV-PJO"/>
+                            <constraint firstItem="43o-sL-nvw" firstAttribute="trailing" secondItem="VYC-XL-n03" secondAttribute="trailing" id="xcT-22-0Dk"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VYC-XL-n03"/>
                     </view>
                     <connections>
-                        <outlet property="birdWebView" destination="qJW-Nf-HxI" id="TO2-7g-lU1"/>
+                        <outlet property="birdWebView" destination="43o-sL-nvw" id="7za-GC-WQa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2ia-2y-6F9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2951" y="1558"/>
+            <point key="canvasLocation" x="2949.5999999999999" y="1557.5712143928038"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="40e-XM-ZVm">

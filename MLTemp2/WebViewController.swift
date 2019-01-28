@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import WebKit
 
 class WebViewController: UIViewController {
 
-    @IBOutlet weak var birdWebView: UIWebView!
+    
+    @IBOutlet weak var birdWebView: WKWebView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -20,7 +22,7 @@ class WebViewController: UIViewController {
         
         let birdURL = URL(string: "http://www.birdsinbackyards.net/species/" + birdDataURL[myIndex])
 
-        birdWebView.loadRequest(URLRequest(url: birdURL!))
+        birdWebView.load(URLRequest(url: birdURL!))
     }
 
 }
