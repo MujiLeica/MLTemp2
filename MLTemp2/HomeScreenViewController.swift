@@ -17,7 +17,7 @@ class HomeScreenViewController: UIViewController {
     @IBOutlet weak var onlineRecoButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        var radius = offlineRecoButton.frame.height / 2
+        let radius = offlineRecoButton.frame.height / 4
         offlineRecoButton.layer.cornerRadius = radius
         liveRecoButton.layer.cornerRadius = radius
         birdDataButton.layer.cornerRadius = radius
