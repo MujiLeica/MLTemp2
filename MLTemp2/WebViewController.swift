@@ -23,6 +23,8 @@ class WebViewController: UIViewController {
         let birdURL = URL(string: "http://www.birdsinbackyards.net/species/" + birdDataURL[myIndex])
 
         birdWebView.load(URLRequest(url: birdURL!))
+
+        //birdWebView.loadHTMLString("http://www.birdsinbackyards.net/species/" + birdDataURL[myIndex], baseURL: nil)
     }
 
 }

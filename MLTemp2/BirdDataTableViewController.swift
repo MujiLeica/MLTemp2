@@ -8,7 +8,7 @@
 
 import UIKit
 
-var birdSpecies = ["Australian King-Parrot", "Australian Magpie", "Australian Raven", "Eastern Koel", "Myna", "Crested Pigeon", "Crimson Rosella", "Eastern Spinebill", "Eastern Yellow Robin", "Galah"]
+var birdSpecies = ["Australian King Parrot", "Australian Magpie", "Australian Raven", "Eastern Koel", "Myna", "Crested Pigeon", "Crimson Rosella", "Eastern Spinebill", "Eastern Yellow Robin", "Galah"]
 
 var birdDataURL = ["Alisterus-scapularis", "Cracticus-tibicen", "Corvus-coronoides", "Eudynamys-orientalis", "Sturnus-tristis", "Ocyphaps-lophotes", "Platycercus-elegans", "Acanthorhynchus-tenuirostris", "Eopsaltria-australis", "Eolophus-roseicapillus"]
 

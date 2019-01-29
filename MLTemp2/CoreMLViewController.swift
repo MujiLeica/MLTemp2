@@ -14,7 +14,9 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 
     @IBOutlet weak var imageView: UIImageView!
     
-    @IBOutlet weak var predictionLabel: UILabel!
+    //@IBOutlet weak var predictionLabel: UILabel!
+    
+    @IBOutlet weak var predictionButton: UIButton!
     
     @IBOutlet weak var confidenceLabel: UILabel!
     
@@ -24,6 +26,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.predictionButton.isEnabled = false
     }
 
     func processImage(image: UIImage) {
@@ -34,7 +37,17 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 //                    for classification in results {
 //                        print("ID:\(classification.identifier) Confidence:\(classification.confidence)")
 //                    }
-                    self.predictionLabel.text = results.first?.identifier
+                    
+                    let species = results.first?.identifier
+                    
+                    self.predictionButton.setTitle(species, for: UIControl.State.normal)
+
+                    if species != "Prediction" {
+                        self.predictionButton.isEnabled = true
+                        myIndex = birdSpecies.firstIndex(of: species!)!
+                    }
+                    
+                    
                     
                     if let temp = results.first?.confidence {
                         self.confidenceLabel.text = "\(temp * 100.0)%"
@@ -47,6 +60,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             }
         }
     }
+    
+    
     
     @IBAction func CameraTapped(_ sender: Any) {
         let imagePicker = UIImagePickerController()
