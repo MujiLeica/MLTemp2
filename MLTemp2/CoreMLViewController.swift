@@ -18,7 +18,16 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     @IBOutlet weak var predictionButton: UIButton!
     
-    @IBOutlet weak var confidenceLabel: UILabel!
+    //@IBOutlet weak var confidenceLabel: UILabel!
+    @IBOutlet weak var confidenceButton: UIButton!
+    
+    var first = ""
+    var second = ""
+    var third = ""
+    var firstConfidence = ""
+    var secondConfidence = ""
+    var thirdConfidence = ""
+    
     
     
     
@@ -27,17 +36,46 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     override func viewDidLoad() {
         super.viewDidLoad()
         self.predictionButton.isEnabled = false
+        self.confidenceButton.isEnabled = false
     }
 
     func processImage(image: UIImage) {
         if let model = try? VNCoreMLModel(for: self.birdClassificationModel.model) {
             let request = VNCoreMLRequest(model: model) { (request, error) in
                 if let results = request.results as? [VNClassificationObservation] {
+                    
+                    //print (results)
+                    
                     // print out all predictions
 //                    for classification in results {
 //                        print("ID:\(classification.identifier) Confidence:\(classification.confidence)")
 //                    }
                     
+                    
+                    let topClassifications = results.prefix(3)
+                    let descriptions = topClassifications.map { classification in
+                        // Formats the classification for display; e.g. "(0.37) cliff, drop, drop-off".
+                        //return String(format: "  (%.4f) %@", classification.confidence, classification.identifier)
+                        return String(format: "%@", classification.identifier)
+                    }
+                    
+                    let confidenceDescriptions = topClassifications.map { classification in
+            
+                        //return String(format: "  (%.4f) %@", classification.confidence, classification.identifier)
+                        return String(format: "%.4f", classification.confidence)
+                    }
+                    print ("Top Classifications")
+                    print (descriptions)
+                    
+                    self.first = descriptions[0]
+                    self.second = descriptions[1]
+                    self.third = descriptions[2]
+                    
+                    self.firstConfidence = confidenceDescriptions[0]
+                    self.secondConfidence = confidenceDescriptions[1]
+                    self.thirdConfidence = confidenceDescriptions[2]
+                    
+            
                     let species = results.first?.identifier
                     
                     self.predictionButton.setTitle(species, for: UIControl.State.normal)
@@ -50,8 +88,10 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
                     
                     
                     if let temp = results.first?.confidence {
-                        self.confidenceLabel.text = "\(temp * 100.0)%"
+                        self.confidenceButton.setTitle("\(temp * 100.0)%", for: UIControl.State.normal)
+                        self.confidenceButton.isEnabled = true
                     }
+                
                 }
             }
             if let imageData = image.pngData() {
@@ -98,6 +138,20 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             processImage(image: selectedImage)
         }
         picker.dismiss(animated: true, completion: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "photoToResult" {
+            let vc = segue.destination as! ResultsViewController
+            vc.firstPrediction = self.first
+            vc.secondPrediction = self.second
+            vc.thirdPrediction = self.third
+            vc.firstConfidence = self.firstConfidence
+            vc.secondConfidence = self.secondConfidence
+            vc.thirdConfidence = self.thirdConfidence
+        }
+        
     }
 }
 
