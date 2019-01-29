@@ -13,6 +13,7 @@ import Vision
 
 class LiveRecognitionViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate {
 
+    @IBOutlet weak var stopButton: UIButton!
     let identifierLabel: UILabel = {
         let label = UILabel()
         label.backgroundColor = .white
@@ -23,6 +24,9 @@ class LiveRecognitionViewController: UIViewController, AVCaptureVideoDataOutputS
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let radius = stopButton.frame.height / 4
+        stopButton.layer.cornerRadius = radius
         
         let captureSession = AVCaptureSession()
         

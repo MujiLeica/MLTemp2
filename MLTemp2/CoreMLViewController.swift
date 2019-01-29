@@ -35,6 +35,9 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let radius = predictionButton.frame.height / 4
+        predictionButton.layer.cornerRadius = radius
+        confidenceButton.layer.cornerRadius = radius
         self.predictionButton.isEnabled = false
         self.confidenceButton.isEnabled = false
     }
