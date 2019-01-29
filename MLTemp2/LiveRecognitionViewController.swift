@@ -78,10 +78,14 @@ class LiveRecognitionViewController: UIViewController, AVCaptureVideoDataOutputS
             // display the first observation    ...    is the first observation the highest confidence one?
             guard let firstObservation = results.first else { return }
             
+            let percentage = String(format: "%.4f", firstObservation.confidence * 100)
+            
             //print(firstObservation.identifier, firstObservation.confidence)
             
+//            DispatchQueue.main.async {
+//                self.identifierLabel.text = "\(firstObservation.identifier) \(firstObservation.confidence * 100)"
             DispatchQueue.main.async {
-                self.identifierLabel.text = "\(firstObservation.identifier) \(firstObservation.confidence * 100)"
+                self.identifierLabel.text = "\(firstObservation.identifier) " + percentage
             }
             
         }
