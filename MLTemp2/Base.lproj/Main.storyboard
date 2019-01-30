@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SKu-R3-pSK">
-                                <rect key="frame" x="10" y="74" width="355" height="433"/>
+                                <rect key="frame" x="10" y="104" width="355" height="403"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c8h-an-2Mh">
                                 <rect key="frame" x="10" y="517" width="355" height="40"/>
@@ -58,6 +58,15 @@
                                 <color key="textColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For best accuracy, please make sure birds are upright" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ey-AB-e0h">
+                                <rect key="frame" x="10" y="74" width="355" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="ScO-PT-Wob"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -67,13 +76,16 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="c8h-an-2Mh" secondAttribute="trailing" constant="10" id="MDe-ZR-EkB"/>
                             <constraint firstItem="xh5-yk-Bs4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="P1A-rN-Wdd"/>
                             <constraint firstItem="RAZ-rW-KaM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="PTf-SC-nmG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5Ey-AB-e0h" secondAttribute="trailing" constant="10" id="PnG-z4-hUq"/>
                             <constraint firstItem="c8h-an-2Mh" firstAttribute="top" secondItem="SKu-R3-pSK" secondAttribute="bottom" constant="10" id="Vwo-w2-GeW"/>
                             <constraint firstItem="RAZ-rW-KaM" firstAttribute="top" secondItem="c8h-an-2Mh" secondAttribute="bottom" constant="10" id="ann-eP-y5X"/>
-                            <constraint firstItem="SKu-R3-pSK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="gj4-U9-bqv"/>
+                            <constraint firstItem="5Ey-AB-e0h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="bV0-Lk-bLI"/>
                             <constraint firstItem="SKu-R3-pSK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="j18-rx-X1q"/>
                             <constraint firstItem="c8h-an-2Mh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="kJm-Eb-XEO"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SKu-R3-pSK" secondAttribute="trailing" constant="10" id="szx-vq-NXm"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xh5-yk-Bs4" secondAttribute="trailing" constant="10" id="xyk-5H-Zya"/>
+                            <constraint firstItem="SKu-R3-pSK" firstAttribute="top" secondItem="5Ey-AB-e0h" secondAttribute="bottom" constant="10" id="y5S-fe-h5h"/>
+                            <constraint firstItem="5Ey-AB-e0h" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="yae-ey-nqY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -92,7 +104,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3006" y="-255"/>
+            <point key="canvasLocation" x="3005.5999999999999" y="-255.02248875562222"/>
         </scene>
         <!--Results View Controller-->
         <scene sceneID="HTh-MW-KHa">
@@ -384,7 +396,7 @@
                                     <constraint firstAttribute="height" constant="50" id="Sjh-lX-xvx"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
-                                <state key="normal" title="Bird Data">
+                                <state key="normal" title="Learn about Birds">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -439,7 +451,7 @@
                                 <color key="textColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version 1.0 Please make sure images are not up-side-down" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R06-mM-7HS">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version 1.0 Developped by Chong Liu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R06-mM-7HS">
                                 <rect key="frame" x="10" y="573.5" width="355" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="r0b-YY-dhr"/>
@@ -514,6 +526,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="uuW-YE-MbH"/>
+        <segue reference="xqt-kY-lNl"/>
     </inferredMetricsTieBreakers>
 </document>

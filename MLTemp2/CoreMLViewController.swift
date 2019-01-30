@@ -24,9 +24,12 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     var first = ""
     var second = ""
     var third = ""
-    var firstConfidence = ""
-    var secondConfidence = ""
-    var thirdConfidence = ""
+    var firstConfidence: Float = 0
+//    var secondConfidence = ""
+//    var thirdConfidence = ""
+    var secondConfidence: Float = 0
+    var thirdConfidence: Float = 0
+    
     
     
     
@@ -65,7 +68,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
                     let confidenceDescriptions = topClassifications.map { classification in
             
                         //return String(format: "  (%.4f) %@", classification.confidence, classification.identifier)
-                        return String(format: "%.4f", classification.confidence)
+                        //return String(format: "%.4f", classification.confidence)
+                        return classification.confidence
                     }
                     print ("Top Classifications")
                     print (descriptions)
@@ -91,7 +95,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
                     
                     
                     if let temp = results.first?.confidence {
-                        self.confidenceButton.setTitle("\(temp * 100.0)%", for: UIControl.State.normal)
+                        self.confidenceButton.setTitle(String(format: "%.4f", temp * 100) + "%", for: UIControl.State.normal)
                         self.confidenceButton.isEnabled = true
                     }
                 

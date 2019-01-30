@@ -13,9 +13,13 @@ class ResultsViewController: UIViewController {
     var firstPrediction = ""
     var secondPrediction = ""
     var thirdPrediction = ""
-    var firstConfidence = ""
-    var secondConfidence = ""
-    var thirdConfidence = ""
+//    var firstConfidence = ""
+//    var secondConfidence = ""
+//    var thirdConfidence = ""
+    
+    var firstConfidence: Float = 0
+    var secondConfidence: Float = 0
+    var thirdConfidence: Float = 0
     
     @IBOutlet weak var firstResultLabel: UILabel!
     
@@ -35,9 +39,12 @@ class ResultsViewController: UIViewController {
         firstPredictionButton.setTitle(firstPrediction, for: UIControl.State.normal)
         secondPredictionButton.setTitle(secondPrediction, for: UIControl.State.normal)
         thirdPredictionButton.setTitle(thirdPrediction, for: UIControl.State.normal)
-        firstResultLabel.text = firstConfidence
-        secondResultLabel.text = secondConfidence
-        thirdResultLabel.text = thirdConfidence
+//        firstResultLabel.text = firstConfidence
+//        secondResultLabel.text = secondConfidence
+//        thirdResultLabel.text = thirdConfidence
+        firstResultLabel.text = String(format: "%.4f", firstConfidence * 100) + "%"
+        secondResultLabel.text = String(format: "%.4f", secondConfidence * 100) + "%"
+        thirdResultLabel.text = String(format: "%.4f", thirdConfidence * 100) + "%"
         
         let radius = firstPredictionButton.frame.height / 4
         firstPredictionButton.layer.cornerRadius = radius
