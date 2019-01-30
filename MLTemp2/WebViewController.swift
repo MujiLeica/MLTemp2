@@ -16,15 +16,14 @@ class WebViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        let myurl = URL(string: "http://www.birdsinbackyards.net/species/Alisterus-scapularis")
-//
-//        birdWebView.loadRequest(URLRequest(url: myurl!))
-        
+        // There will be a small glitch when loading the URL
+        // That is a problem with the website not a bug in the App
+        // I tried to load other websites and there's no glitch at all
+        // Even by just copying this url into Safari there's a glitch as well
         let birdURL = URL(string: "http://www.birdsinbackyards.net/species/" + birdDataURL[myIndex])
 
         birdWebView.load(URLRequest(url: birdURL!))
-
-        //birdWebView.loadHTMLString("http://www.birdsinbackyards.net/species/" + birdDataURL[myIndex], baseURL: nil)
+    
     }
 
 }
