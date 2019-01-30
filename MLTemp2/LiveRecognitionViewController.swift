@@ -55,7 +55,7 @@ class LiveRecognitionViewController: UIViewController, AVCaptureVideoDataOutputS
     
     fileprivate func setupIdentifierConfidenceLabel() {
         view.addSubview(identifierLabel)
-        identifierLabel.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -32).isActive = true
+        identifierLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 20).isActive = true
         identifierLabel.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
         identifierLabel.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
         identifierLabel.heightAnchor.constraint(equalToConstant: 50).isActive = true

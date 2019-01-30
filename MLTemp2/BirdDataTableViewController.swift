@@ -8,9 +8,9 @@
 
 import UIKit
 
-var birdSpecies = ["Australian King Parrot", "Australian Magpie", "Australian Raven", "Eastern Koel", "Myna", "Crested Pigeon", "Crimson Rosella", "Eastern Spinebill", "Eastern Yellow Robin", "Galah"]
+var birdSpecies = ["Australian King Parrot", "Australian Magpie", "Australian Raven", "Eastern Koel", "Myna", "Crested Pigeon", "Crimson Rosella", "Eastern Spinebill", "Eastern Yellow Robin", "Galah", "Grey Butcherbird", "Grey Fantail", "House Sparrow", "Laughing Kookaburra", "Little Wattlebird", "Magpie-lark", "New Holland Honeyeater", "Noisy Miner", "Pied Currawong", "Rainbow Lorikeet", "Red Wattlebird", "Red-browed Finch", "Red-whiskered Bulbul", "Silvereye", "Spotted Pardalote", "Spotted Dove", "Sulphur-crested Cockatoo", "Superb Fairy-wren", "Willie Wagtail", "Yellow-tailed Black-Cockatoo"]
 
-var birdDataURL = ["Alisterus-scapularis", "Cracticus-tibicen", "Corvus-coronoides", "Eudynamys-orientalis", "Sturnus-tristis", "Ocyphaps-lophotes", "Platycercus-elegans", "Acanthorhynchus-tenuirostris", "Eopsaltria-australis", "Eolophus-roseicapillus"]
+var birdDataURL = ["Alisterus-scapularis", "Cracticus-tibicen", "Corvus-coronoides", "Eudynamys-orientalis", "Sturnus-tristis", "Ocyphaps-lophotes", "Platycercus-elegans", "Acanthorhynchus-tenuirostris", "Eopsaltria-australis", "Eolophus-roseicapillus", "Cracticus-torquatus", "Rhipidura-albiscapa", "Passer-domesticus", "Dacelo-novaeguineae", "Anthochaera-chrysoptera", "Grallina-cyanoleuca", "Phylidonyris-novaehollandiae", "Manorina-melanocephala", "Strepera-graculina", "Trichoglossus-haematodus", "Anthochaera-carunculata", "Neochmia-temporalis", "Pycnonotus-jocosus", "Zosterops-lateralis", "Pardalotus-punctatus", "Streptopelia-chinensis", "Cacatua-galerita", "Malurus-cyaneus", "Rhipidura-leucophrys", "Calyptorhynchus-funereus"]
 
 var myIndex = 0
 

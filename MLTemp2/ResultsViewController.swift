@@ -38,6 +38,17 @@ class ResultsViewController: UIViewController {
         firstResultLabel.text = firstConfidence
         secondResultLabel.text = secondConfidence
         thirdResultLabel.text = thirdConfidence
+        
+        let radius = firstPredictionButton.frame.height / 4
+        firstPredictionButton.layer.cornerRadius = radius
+        firstResultLabel.layer.cornerRadius = radius
+        firstResultLabel.clipsToBounds = true
+        secondPredictionButton.layer.cornerRadius = radius
+        secondResultLabel.layer.cornerRadius = radius
+        secondResultLabel.clipsToBounds = true
+        thirdPredictionButton.layer.cornerRadius = radius
+        thirdResultLabel.layer.cornerRadius = radius
+        thirdResultLabel.clipsToBounds = true
     }
     
     @IBAction func firstResultButton(_ sender: Any) {
