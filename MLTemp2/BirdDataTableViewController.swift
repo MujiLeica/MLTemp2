@@ -38,8 +38,11 @@ class BirdDataTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "sampleCell", for: indexPath)
-        cell.textLabel?.text = birdSpecies[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "sampleCell", for: indexPath) as! SampleCellTableViewCell
+        
+        cell.nameLabel.text = birdSpecies[indexPath.row]
+        cell.thumbnailImageView.image = UIImage(named: birdSpecies[indexPath.row] + ".jpg")
+        
 
         return cell
     }

@@ -7,6 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		634EE38B2201FEDB008724E7 /* New Holland Honeyeater.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 634EE36E2201FED8008724E7 /* New Holland Honeyeater.jpg */; };
+		634EE38C2201FEDB008724E7 /* Yellow-tailed Black-Cockatoo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 634EE36F2201FED8008724E7 /* Yellow-tailed Black-Cockatoo.jpg */; };
+		634EE38D2201FEDB008724E7 /* Australian Raven.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 634EE3702201FED8008724E7 /* Australian Raven.jpg */; };
+		634EE38E2201FEDB008724E7 /* Laughing Kookaburra.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 634EE3712201FED8008724E7 /* Laughing Kookaburra.jpg */; };
+		634EE38F2201FEDB008724E7 /* Silvereye.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 634EE3722201FED9008724E7 /* Silvereye.jpg */; };
+		634EE3902201FEDB008724E7 /* Rainbow Lorikeet.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 634EE3732201FED9008724E7 /* Rainbow Lorikeet.jpg */; };
+		634EE3912201FEDB008724E7 /* Noisy Miner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 634EE3742201FED9008724E7 /* Noisy Miner.jpg */; };
+		634EE3922201FEDB008724E7 /* Superb Fairy-wren.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 634EE3752201FED9008724E7 /* Superb Fairy-wren.jpg */; };
+		634EE3932201FEDB008724E7 /* Australian King Parrot.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 634EE3762201FED9008724E7 /* Australian King Parrot.jpg */; };
+		634EE3942201FEDB008724E7 /* Pied Currawong.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 634EE3772201FED9008724E7 /* Pied Currawong.jpg */; };
+		634EE3952201FEDB008724E7 /* Spotted Dove.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 634EE3782201FED9008724E7 /* Spotted Dove.jpg */; };
+		634EE3962201FEDB008724E7 /* Willie Wagtail.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 634EE3792201FED9008724E7 /* Willie Wagtail.jpg */; };
+		634EE3972201FEDB008724E7 /* House Sparrow.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 634EE37A2201FED9008724E7 /* House Sparrow.jpg */; };
+		634EE3982201FEDB008724E7 /* Crested Pigeon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 634EE37B2201FED9008724E7 /* Crested Pigeon.jpg */; };
+		634EE3992201FEDB008724E7 /* Galah.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 634EE37C2201FEDA008724E7 /* Galah.jpg */; };
+		634EE39A2201FEDB008724E7 /* Myna.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 634EE37D2201FEDA008724E7 /* Myna.jpg */; };
+		634EE39B2201FEDB008724E7 /* Eastern Spinebill.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 634EE37E2201FEDA008724E7 /* Eastern Spinebill.jpg */; };
+		634EE39C2201FEDB008724E7 /* Grey Butcherbird.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 634EE37F2201FEDA008724E7 /* Grey Butcherbird.jpg */; };
+		634EE39D2201FEDB008724E7 /* Red-browed Finch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 634EE3802201FEDA008724E7 /* Red-browed Finch.jpg */; };
+		634EE39E2201FEDB008724E7 /* Sulphur-crested Cockatoo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 634EE3812201FEDA008724E7 /* Sulphur-crested Cockatoo.jpg */; };
+		634EE39F2201FEDB008724E7 /* Australian Magpie.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 634EE3822201FEDA008724E7 /* Australian Magpie.jpg */; };
+		634EE3A02201FEDB008724E7 /* Red-whiskered Bulbul.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 634EE3832201FEDA008724E7 /* Red-whiskered Bulbul.jpg */; };
+		634EE3A12201FEDB008724E7 /* Crimson Rosella.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 634EE3842201FEDA008724E7 /* Crimson Rosella.jpg */; };
+		634EE3A22201FEDB008724E7 /* Little Wattlebird.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 634EE3852201FEDA008724E7 /* Little Wattlebird.jpg */; };
+		634EE3A32201FEDB008724E7 /* Eastern Koel.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 634EE3862201FEDA008724E7 /* Eastern Koel.jpg */; };
+		634EE3A42201FEDB008724E7 /* Spotted Pardalote.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 634EE3872201FEDA008724E7 /* Spotted Pardalote.jpg */; };
+		634EE3A52201FEDB008724E7 /* Grey Fantail.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 634EE3882201FEDA008724E7 /* Grey Fantail.jpg */; };
+		634EE3A62201FEDB008724E7 /* Eastern Yellow Robin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 634EE3892201FEDB008724E7 /* Eastern Yellow Robin.jpg */; };
+		634EE3A72201FEDB008724E7 /* Red Wattlebird.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 634EE38A2201FEDB008724E7 /* Red Wattlebird.jpg */; };
+		634EE3AC22020359008724E7 /* SampleCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634EE3AB22020359008724E7 /* SampleCellTableViewCell.swift */; };
+		634EE3AE2202058C008724E7 /* Magpie-lark.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 634EE3AD2202058C008724E7 /* Magpie-lark.jpg */; };
 		6356E12322009A3C00E43653 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6356E12222009A3C00E43653 /* ResultsViewController.swift */; };
 		637C930921CFC88600AEEC11 /* LiveRecognitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637C930821CFC88600AEEC11 /* LiveRecognitionViewController.swift */; };
 		637F17C921F9F8540022BFAE /* BirdDataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637F17C821F9F8540022BFAE /* BirdDataTableViewController.swift */; };
@@ -21,6 +52,37 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		634EE36E2201FED8008724E7 /* New Holland Honeyeater.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "New Holland Honeyeater.jpg"; sourceTree = "<group>"; };
+		634EE36F2201FED8008724E7 /* Yellow-tailed Black-Cockatoo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Yellow-tailed Black-Cockatoo.jpg"; sourceTree = "<group>"; };
+		634EE3702201FED8008724E7 /* Australian Raven.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Australian Raven.jpg"; sourceTree = "<group>"; };
+		634EE3712201FED8008724E7 /* Laughing Kookaburra.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Laughing Kookaburra.jpg"; sourceTree = "<group>"; };
+		634EE3722201FED9008724E7 /* Silvereye.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Silvereye.jpg; sourceTree = "<group>"; };
+		634EE3732201FED9008724E7 /* Rainbow Lorikeet.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Rainbow Lorikeet.jpg"; sourceTree = "<group>"; };
+		634EE3742201FED9008724E7 /* Noisy Miner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Noisy Miner.jpg"; sourceTree = "<group>"; };
+		634EE3752201FED9008724E7 /* Superb Fairy-wren.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Superb Fairy-wren.jpg"; sourceTree = "<group>"; };
+		634EE3762201FED9008724E7 /* Australian King Parrot.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Australian King Parrot.jpg"; sourceTree = "<group>"; };
+		634EE3772201FED9008724E7 /* Pied Currawong.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Pied Currawong.jpg"; sourceTree = "<group>"; };
+		634EE3782201FED9008724E7 /* Spotted Dove.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Spotted Dove.jpg"; sourceTree = "<group>"; };
+		634EE3792201FED9008724E7 /* Willie Wagtail.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Willie Wagtail.jpg"; sourceTree = "<group>"; };
+		634EE37A2201FED9008724E7 /* House Sparrow.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "House Sparrow.jpg"; sourceTree = "<group>"; };
+		634EE37B2201FED9008724E7 /* Crested Pigeon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Crested Pigeon.jpg"; sourceTree = "<group>"; };
+		634EE37C2201FEDA008724E7 /* Galah.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Galah.jpg; sourceTree = "<group>"; };
+		634EE37D2201FEDA008724E7 /* Myna.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Myna.jpg; sourceTree = "<group>"; };
+		634EE37E2201FEDA008724E7 /* Eastern Spinebill.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Eastern Spinebill.jpg"; sourceTree = "<group>"; };
+		634EE37F2201FEDA008724E7 /* Grey Butcherbird.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Grey Butcherbird.jpg"; sourceTree = "<group>"; };
+		634EE3802201FEDA008724E7 /* Red-browed Finch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Red-browed Finch.jpg"; sourceTree = "<group>"; };
+		634EE3812201FEDA008724E7 /* Sulphur-crested Cockatoo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Sulphur-crested Cockatoo.jpg"; sourceTree = "<group>"; };
+		634EE3822201FEDA008724E7 /* Australian Magpie.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Australian Magpie.jpg"; sourceTree = "<group>"; };
+		634EE3832201FEDA008724E7 /* Red-whiskered Bulbul.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Red-whiskered Bulbul.jpg"; sourceTree = "<group>"; };
+		634EE3842201FEDA008724E7 /* Crimson Rosella.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Crimson Rosella.jpg"; sourceTree = "<group>"; };
+		634EE3852201FEDA008724E7 /* Little Wattlebird.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Little Wattlebird.jpg"; sourceTree = "<group>"; };
+		634EE3862201FEDA008724E7 /* Eastern Koel.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Eastern Koel.jpg"; sourceTree = "<group>"; };
+		634EE3872201FEDA008724E7 /* Spotted Pardalote.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Spotted Pardalote.jpg"; sourceTree = "<group>"; };
+		634EE3882201FEDA008724E7 /* Grey Fantail.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Grey Fantail.jpg"; sourceTree = "<group>"; };
+		634EE3892201FEDB008724E7 /* Eastern Yellow Robin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Eastern Yellow Robin.jpg"; sourceTree = "<group>"; };
+		634EE38A2201FEDB008724E7 /* Red Wattlebird.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Red Wattlebird.jpg"; sourceTree = "<group>"; };
+		634EE3AB22020359008724E7 /* SampleCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleCellTableViewCell.swift; sourceTree = "<group>"; };
+		634EE3AD2202058C008724E7 /* Magpie-lark.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Magpie-lark.jpg"; sourceTree = "<group>"; };
 		6356E12222009A3C00E43653 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		637C930821CFC88600AEEC11 /* LiveRecognitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveRecognitionViewController.swift; sourceTree = "<group>"; };
 		637F17C821F9F8540022BFAE /* BirdDataTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdDataTableViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +109,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		634EE3A82201FF6F008724E7 /* Bird Images */ = {
+			isa = PBXGroup;
+			children = (
+				634EE3AD2202058C008724E7 /* Magpie-lark.jpg */,
+				634EE3892201FEDB008724E7 /* Eastern Yellow Robin.jpg */,
+				634EE37C2201FEDA008724E7 /* Galah.jpg */,
+				634EE37F2201FEDA008724E7 /* Grey Butcherbird.jpg */,
+				634EE3882201FEDA008724E7 /* Grey Fantail.jpg */,
+				634EE37A2201FED9008724E7 /* House Sparrow.jpg */,
+				634EE3712201FED8008724E7 /* Laughing Kookaburra.jpg */,
+				634EE3852201FEDA008724E7 /* Little Wattlebird.jpg */,
+				634EE37D2201FEDA008724E7 /* Myna.jpg */,
+				634EE36E2201FED8008724E7 /* New Holland Honeyeater.jpg */,
+				634EE3742201FED9008724E7 /* Noisy Miner.jpg */,
+				634EE3772201FED9008724E7 /* Pied Currawong.jpg */,
+				634EE3732201FED9008724E7 /* Rainbow Lorikeet.jpg */,
+				634EE38A2201FEDB008724E7 /* Red Wattlebird.jpg */,
+				634EE3802201FEDA008724E7 /* Red-browed Finch.jpg */,
+				634EE3832201FEDA008724E7 /* Red-whiskered Bulbul.jpg */,
+				634EE3822201FEDA008724E7 /* Australian Magpie.jpg */,
+				634EE3702201FED8008724E7 /* Australian Raven.jpg */,
+				634EE37B2201FED9008724E7 /* Crested Pigeon.jpg */,
+				634EE3762201FED9008724E7 /* Australian King Parrot.jpg */,
+				634EE3722201FED9008724E7 /* Silvereye.jpg */,
+				634EE3782201FED9008724E7 /* Spotted Dove.jpg */,
+				634EE3872201FEDA008724E7 /* Spotted Pardalote.jpg */,
+				634EE3812201FEDA008724E7 /* Sulphur-crested Cockatoo.jpg */,
+				634EE3752201FED9008724E7 /* Superb Fairy-wren.jpg */,
+				634EE3792201FED9008724E7 /* Willie Wagtail.jpg */,
+				634EE36F2201FED8008724E7 /* Yellow-tailed Black-Cockatoo.jpg */,
+				634EE3842201FEDA008724E7 /* Crimson Rosella.jpg */,
+				634EE3862201FEDA008724E7 /* Eastern Koel.jpg */,
+				634EE37E2201FEDA008724E7 /* Eastern Spinebill.jpg */,
+			);
+			path = "Bird Images";
+			sourceTree = "<group>";
+		};
 		63E4DFC121CB89B200A1782D = {
 			isa = PBXGroup;
 			children = (
@@ -74,8 +173,10 @@
 				637F17CA21F9FA9A0022BFAE /* WebViewController.swift */,
 				63AF384421FF13A300F2DD1B /* HomeScreenViewController.swift */,
 				6356E12222009A3C00E43653 /* ResultsViewController.swift */,
+				634EE3AB22020359008724E7 /* SampleCellTableViewCell.swift */,
 				63E4DFD121CB89B200A1782D /* Main.storyboard */,
 				63E4DFD421CB89B300A1782D /* Assets.xcassets */,
+				634EE3A82201FF6F008724E7 /* Bird Images */,
 				63E4DFD621CB89B300A1782D /* LaunchScreen.storyboard */,
 				63E4DFD921CB89B300A1782D /* Info.plist */,
 			);
@@ -140,9 +241,39 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				634EE3A32201FEDB008724E7 /* Eastern Koel.jpg in Resources */,
+				634EE39E2201FEDB008724E7 /* Sulphur-crested Cockatoo.jpg in Resources */,
+				634EE39B2201FEDB008724E7 /* Eastern Spinebill.jpg in Resources */,
+				634EE3A62201FEDB008724E7 /* Eastern Yellow Robin.jpg in Resources */,
+				634EE38C2201FEDB008724E7 /* Yellow-tailed Black-Cockatoo.jpg in Resources */,
+				634EE38E2201FEDB008724E7 /* Laughing Kookaburra.jpg in Resources */,
+				634EE3A42201FEDB008724E7 /* Spotted Pardalote.jpg in Resources */,
+				634EE39C2201FEDB008724E7 /* Grey Butcherbird.jpg in Resources */,
+				634EE3972201FEDB008724E7 /* House Sparrow.jpg in Resources */,
+				634EE3932201FEDB008724E7 /* Australian King Parrot.jpg in Resources */,
+				634EE3A22201FEDB008724E7 /* Little Wattlebird.jpg in Resources */,
+				634EE39D2201FEDB008724E7 /* Red-browed Finch.jpg in Resources */,
 				63E4DFD821CB89B300A1782D /* LaunchScreen.storyboard in Resources */,
+				634EE3AE2202058C008724E7 /* Magpie-lark.jpg in Resources */,
+				634EE3A12201FEDB008724E7 /* Crimson Rosella.jpg in Resources */,
+				634EE3A72201FEDB008724E7 /* Red Wattlebird.jpg in Resources */,
+				634EE39A2201FEDB008724E7 /* Myna.jpg in Resources */,
+				634EE38B2201FEDB008724E7 /* New Holland Honeyeater.jpg in Resources */,
+				634EE39F2201FEDB008724E7 /* Australian Magpie.jpg in Resources */,
+				634EE38F2201FEDB008724E7 /* Silvereye.jpg in Resources */,
+				634EE3922201FEDB008724E7 /* Superb Fairy-wren.jpg in Resources */,
+				634EE38D2201FEDB008724E7 /* Australian Raven.jpg in Resources */,
 				63E4DFD521CB89B300A1782D /* Assets.xcassets in Resources */,
+				634EE3962201FEDB008724E7 /* Willie Wagtail.jpg in Resources */,
+				634EE3942201FEDB008724E7 /* Pied Currawong.jpg in Resources */,
+				634EE3952201FEDB008724E7 /* Spotted Dove.jpg in Resources */,
+				634EE3982201FEDB008724E7 /* Crested Pigeon.jpg in Resources */,
+				634EE3902201FEDB008724E7 /* Rainbow Lorikeet.jpg in Resources */,
 				63E4DFD321CB89B200A1782D /* Main.storyboard in Resources */,
+				634EE3912201FEDB008724E7 /* Noisy Miner.jpg in Resources */,
+				634EE3A52201FEDB008724E7 /* Grey Fantail.jpg in Resources */,
+				634EE3992201FEDB008724E7 /* Galah.jpg in Resources */,
+				634EE3A02201FEDB008724E7 /* Red-whiskered Bulbul.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,6 +292,7 @@
 				63E4DFCE21CB89B200A1782D /* AppDelegate.swift in Sources */,
 				63AF384521FF13A300F2DD1B /* HomeScreenViewController.swift in Sources */,
 				6356E12322009A3C00E43653 /* ResultsViewController.swift in Sources */,
+				634EE3AC22020359008724E7 /* SampleCellTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
