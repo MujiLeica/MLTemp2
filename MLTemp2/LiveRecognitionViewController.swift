@@ -9,68 +9,51 @@
 import UIKit
 import AVKit
 import Vision
+import CoreML
 
 
 class LiveRecognitionViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate {
-
-    @IBOutlet weak var stopButton: UIButton!
-    let identifierLabel: UILabel = {
-        let label = UILabel()
-        label.backgroundColor = .white
-        label.textAlignment = .center
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
-    }()
+    
+    @IBOutlet weak var startButton: UIButton!
+    
+    @IBOutlet weak var predictionLabel: UILabel!
+    
+    
+    var confidence = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let radius = stopButton.frame.height / 4
-        stopButton.layer.cornerRadius = radius
+        let radius = startButton.frame.height / 4
+        startButton.layer.cornerRadius = radius
         
+        // start the camera
         let captureSession = AVCaptureSession()
-        
-        // crop the video output screen a bit
         captureSession.sessionPreset = .photo
         
-        // use back camera on the phone for AVCapture
+        // run back camera on the phone for AVCapture
         guard let captureDevice = AVCaptureDevice.default(for: .video) else { return }
         guard let input = try? AVCaptureDeviceInput(device: captureDevice) else { return }
         captureSession.addInput(input)
-        
         captureSession.startRunning()
         
-        // add an ouput preview layer of video
+        // add an ouput preview layer of the video
         let previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
         view.layer.addSublayer(previewLayer)
         previewLayer.frame = view.frame
         
-        // get access to the data from camera frames
+        // access data from camera frames
         let dataOutput = AVCaptureVideoDataOutput()
         dataOutput.setSampleBufferDelegate(self, queue: DispatchQueue(label: "videoQueue"))
         captureSession.addOutput(dataOutput)
-        
-        setupIdentifierConfidenceLabel()
     }
-    
-    fileprivate func setupIdentifierConfidenceLabel() {
-        view.addSubview(identifierLabel)
-        identifierLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 20).isActive = true
-        identifierLabel.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-        identifierLabel.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
-        identifierLabel.heightAnchor.constraint(equalToConstant: 50).isActive = true
-    }
-    
-    // add a timer or switch for live recognition
-    // save the highest confidence results
-    
 
     // perform coreML request everytime the camera capture a frame
     func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
         
         guard let pixelBuffer: CVPixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer) else { return }
         
-        // select the coreML model
+        // select the coreML model according to user's location
         guard let model = try? VNCoreMLModel(for: BirdClassifier().model) else { return }
         
         // fire up the request
@@ -79,21 +62,43 @@ class LiveRecognitionViewController: UIViewController, AVCaptureVideoDataOutputS
             // get the result
             guard let results = finishedReq.results as? [VNClassificationObservation] else { return }
             
-            // display the first observation    ...    is the first observation the highest confidence one?
+            // display the first observation
             guard let firstObservation = results.first else { return }
             
-            let percentage = String(format: "%.4f", firstObservation.confidence * 100)
+            self.confidence = Int ( firstObservation.confidence * 100 )
             
-            //print(firstObservation.identifier, firstObservation.confidence)
+            var message = ""
+            if self.confidence >= 50 { message = "\(firstObservation.identifier) " + "\(self.confidence)" + "%"}
+            else { message = "The App is not sure about species"}
             
-//            DispatchQueue.main.async {
-//                self.identifierLabel.text = "\(firstObservation.identifier) \(firstObservation.confidence * 100)"
             DispatchQueue.main.async {
-                self.identifierLabel.text = "\(firstObservation.identifier) " + percentage
+                self.predictionLabel.text = message
+            }
+            
+            if ( self.confidence >= 85 ){
+                let finalPrediction = "The App is \(self.confidence) % confident this bird is \(firstObservation.identifier)"
+                self.readResults(message: finalPrediction, language: "en_EN")
             }
             
         }
         
-        try? VNImageRequestHandler(cvPixelBuffer: pixelBuffer, options: [:]).perform([request])
+        if (self.confidence <= 85) {
+            try? VNImageRequestHandler(cvPixelBuffer: pixelBuffer, options: [:]).perform([request])
+        }
     }
+    
+    func readResults (message: String, language: String) {
+        let utterance = AVSpeechUtterance(string: message)
+        utterance.voice = AVSpeechSynthesisVoice(language: language)
+        utterance.rate = 0.5
+        let synthesizer = AVSpeechSynthesizer()
+        synthesizer.speak(utterance)
+    }
+    
+    
+    @IBAction func startButtonTapped(_ sender: Any) {
+        self.confidence = 0
+    }
+    
+    
 }
