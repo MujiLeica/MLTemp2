@@ -24,7 +24,7 @@ class HomeScreenViewController: UIViewController, CLLocationManagerDelegate {
         let radius = offlineRecoButton.frame.height / 4
         offlineRecoButton.layer.cornerRadius = radius
         liveRecoButton.layer.cornerRadius = radius
-        birdDataButton.layer.cornerRadius = radius
+        //birdDataButton.layer.cornerRadius = radius
         soundRecoButton.layer.cornerRadius = radius
         onlineRecoButton.layer.cornerRadius = radius
         
