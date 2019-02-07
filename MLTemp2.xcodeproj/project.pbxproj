@@ -43,6 +43,8 @@
 		637F17C921F9F8540022BFAE /* BirdDataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637F17C821F9F8540022BFAE /* BirdDataTableViewController.swift */; };
 		637F17CB21F9FA9A0022BFAE /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637F17CA21F9FA9A0022BFAE /* WebViewController.swift */; };
 		63AF384521FF13A300F2DD1B /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AF384421FF13A300F2DD1B /* HomeScreenViewController.swift */; };
+		63DBEB882209D29A00CA3495 /* Bird17.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 63DBEB872209D29A00CA3495 /* Bird17.mlmodel */; };
+		63DBEB8A2209FD1F00CA3495 /* Bird29.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 63DBEB892209FD1F00CA3495 /* Bird29.mlmodel */; };
 		63E4DFCE21CB89B200A1782D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4DFCD21CB89B200A1782D /* AppDelegate.swift */; };
 		63E4DFD021CB89B200A1782D /* CoreMLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4DFCF21CB89B200A1782D /* CoreMLViewController.swift */; };
 		63E4DFD321CB89B200A1782D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63E4DFD121CB89B200A1782D /* Main.storyboard */; };
@@ -88,6 +90,8 @@
 		637F17C821F9F8540022BFAE /* BirdDataTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdDataTableViewController.swift; sourceTree = "<group>"; };
 		637F17CA21F9FA9A0022BFAE /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		63AF384421FF13A300F2DD1B /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
+		63DBEB872209D29A00CA3495 /* Bird17.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Bird17.mlmodel; sourceTree = "<group>"; };
+		63DBEB892209FD1F00CA3495 /* Bird29.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Bird29.mlmodel; sourceTree = "<group>"; };
 		63E4DFCA21CB89B200A1782D /* MLTemp2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MLTemp2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63E4DFCD21CB89B200A1782D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63E4DFCF21CB89B200A1782D /* CoreMLViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMLViewController.swift; sourceTree = "<group>"; };
@@ -146,6 +150,20 @@
 			path = "Bird Images";
 			sourceTree = "<group>";
 		};
+		63BE6530220AE653003BC1E2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				63E4DFCF21CB89B200A1782D /* CoreMLViewController.swift */,
+				637F17C821F9F8540022BFAE /* BirdDataTableViewController.swift */,
+				637C930821CFC88600AEEC11 /* LiveRecognitionViewController.swift */,
+				637F17CA21F9FA9A0022BFAE /* WebViewController.swift */,
+				63AF384421FF13A300F2DD1B /* HomeScreenViewController.swift */,
+				6356E12222009A3C00E43653 /* ResultsViewController.swift */,
+				634EE3AB22020359008724E7 /* SampleCellTableViewCell.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		63E4DFC121CB89B200A1782D = {
 			isa = PBXGroup;
 			children = (
@@ -166,14 +184,10 @@
 			isa = PBXGroup;
 			children = (
 				63E4DFDF21CB8BB400A1782D /* BirdClassifier.mlmodel */,
+				63DBEB872209D29A00CA3495 /* Bird17.mlmodel */,
+				63DBEB892209FD1F00CA3495 /* Bird29.mlmodel */,
 				63E4DFCD21CB89B200A1782D /* AppDelegate.swift */,
-				63E4DFCF21CB89B200A1782D /* CoreMLViewController.swift */,
-				637F17C821F9F8540022BFAE /* BirdDataTableViewController.swift */,
-				637C930821CFC88600AEEC11 /* LiveRecognitionViewController.swift */,
-				637F17CA21F9FA9A0022BFAE /* WebViewController.swift */,
-				63AF384421FF13A300F2DD1B /* HomeScreenViewController.swift */,
-				6356E12222009A3C00E43653 /* ResultsViewController.swift */,
-				634EE3AB22020359008724E7 /* SampleCellTableViewCell.swift */,
+				63BE6530220AE653003BC1E2 /* ViewControllers */,
 				63E4DFD121CB89B200A1782D /* Main.storyboard */,
 				63E4DFD621CB89B300A1782D /* LaunchScreen.storyboard */,
 				63E4DFD921CB89B300A1782D /* Info.plist */,
@@ -285,6 +299,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				63E4DFD021CB89B200A1782D /* CoreMLViewController.swift in Sources */,
+				63DBEB882209D29A00CA3495 /* Bird17.mlmodel in Sources */,
+				63DBEB8A2209FD1F00CA3495 /* Bird29.mlmodel in Sources */,
 				637F17CB21F9FA9A0022BFAE /* WebViewController.swift in Sources */,
 				637F17C921F9F8540022BFAE /* BirdDataTableViewController.swift in Sources */,
 				63E4DFE021CB8BB400A1782D /* BirdClassifier.mlmodel in Sources */,

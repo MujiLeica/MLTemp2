@@ -9,6 +9,9 @@
 import UIKit
 import CoreLocation
 
+var latitude = 0.0
+var longitude = 0.0
+
 class HomeScreenViewController: UIViewController, CLLocationManagerDelegate {
 
     @IBOutlet weak var offlineRecoButton: UIButton!
@@ -29,8 +32,22 @@ class HomeScreenViewController: UIViewController, CLLocationManagerDelegate {
         onlineRecoButton.layer.cornerRadius = radius
         
         locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestWhenInUseAuthorization()
+        if CLLocationManager.locationServicesEnabled() {
+            locationManager.startUpdatingLocation()
+        }
+        else { return }
         
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if let location = locations.first {
+            latitude = location.coordinate.latitude
+            longitude = location.coordinate.longitude
+            //print (latitude, longitude)
+        }
+        else {return}
     }
     
 

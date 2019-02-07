@@ -54,7 +54,7 @@ class LiveRecognitionViewController: UIViewController, AVCaptureVideoDataOutputS
         guard let pixelBuffer: CVPixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer) else { return }
         
         // select the coreML model according to user's location
-        guard let model = try? VNCoreMLModel(for: BirdClassifier().model) else { return }
+        guard let model = try? VNCoreMLModel(for: Bird29().model) else { return }
         
         // fire up the request
         let request = VNCoreMLRequest(model: model) { (finishedReq, err) in
@@ -69,7 +69,7 @@ class LiveRecognitionViewController: UIViewController, AVCaptureVideoDataOutputS
             
             var message = ""
             if self.confidence >= 50 { message = "\(firstObservation.identifier) " + "\(self.confidence)" + "%"}
-            else { message = "The App is not sure about species"}
+            else { message = "Thinking..."}
             
             DispatchQueue.main.async {
                 self.predictionLabel.text = message

@@ -185,7 +185,7 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap bird species for more information" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ohh-um-yCE">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap bird species for more information" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ohh-um-yCE">
                                 <rect key="frame" x="10" y="588" width="355" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="l5C-Kg-gTe"/>
@@ -526,7 +526,6 @@
         <!--Home-->
         <scene sceneID="yLs-Fw-HiL">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9xD-Mm-2QS" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Gfo-0f-mRn" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" image="Home_Selected" id="YQC-PM-Hfw"/>
                     <toolbarItems/>
@@ -539,6 +538,7 @@
                         <segue destination="EAe-CU-4JQ" kind="relationship" relationship="rootViewController" id="vIp-J2-VP7"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9xD-Mm-2QS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1046" y="557"/>
         </scene>
@@ -567,6 +567,6 @@
         <image name="twitter" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="uuW-YE-MbH"/>
+        <segue reference="xqt-kY-lNl"/>
     </inferredMetricsTieBreakers>
 </document>

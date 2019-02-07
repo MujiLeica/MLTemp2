@@ -30,11 +30,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     var secondConfidence: Float = 0
     var thirdConfidence: Float = 0
     
-    
-    
-    
-    
-    let birdClassificationModel = BirdClassifier()
+    var birdClassificationModel = Bird29()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,6 +39,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         confidenceButton.layer.cornerRadius = radius
         self.predictionButton.isEnabled = false
         self.confidenceButton.isEnabled = false
+
     }
 
     func processImage(image: UIImage) {
