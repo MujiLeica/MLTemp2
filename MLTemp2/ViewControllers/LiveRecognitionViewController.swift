@@ -6,6 +6,8 @@
 //  Copyright © 2018 CHONG LIU. All rights reserved.
 //
 
+//  This ViewController performs live recognition
+
 import UIKit
 import AVKit
 import Vision

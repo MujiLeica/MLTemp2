@@ -6,9 +6,17 @@
 //  Copyright © 2018 CHONG LIU. All rights reserved.
 //
 
+//  This ViewController performs offline image recognition
+//  Users can choose a photo from the photo library or take a new one
+//  The camera function is pretty basic in the App
+//  because the iPhone's native camera is pretty good already.
+//  There's no point to reinvent the wheel to reproduce iPhone native camera
+//  Users are encouraged to use iPhones native camera to take photos and do the recognition process in the app because all of the native camera features like zoom, grid, flash, brightness and so on
+
+
 import UIKit
 import CoreML
-import Vision
+import Vision // Vision framework is used to connect camera data and Core ML
 
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
@@ -21,6 +29,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     //@IBOutlet weak var confidenceLabel: UILabel!
     @IBOutlet weak var confidenceButton: UIButton!
     
+    // Bird species and confidence waiting to be passed to ResultViewController
     var first = ""
     var second = ""
     var third = ""
@@ -30,6 +39,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     var secondConfidence: Float = 0
     var thirdConfidence: Float = 0
     
+    // we can load the most accurate model according to user's location
     var birdClassificationModel = Bird29()
     
     override func viewDidLoad() {
@@ -39,22 +49,16 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         confidenceButton.layer.cornerRadius = radius
         self.predictionButton.isEnabled = false
         self.confidenceButton.isEnabled = false
-
     }
-
+    
+    // Function to be called to process the image recognition
+    // It returns 3 most confident results just in case the first result is incorrect
     func processImage(image: UIImage) {
         if let model = try? VNCoreMLModel(for: self.birdClassificationModel.model) {
             let request = VNCoreMLRequest(model: model) { (request, error) in
                 if let results = request.results as? [VNClassificationObservation] {
                     
-                    //print (results)
-                    
-                    // print out all predictions
-//                    for classification in results {
-//                        print("ID:\(classification.identifier) Confidence:\(classification.confidence)")
-//                    }
-                    
-                    
+
                     let topClassifications = results.prefix(3)
                     let descriptions = topClassifications.map { classification in
                         // Formats the classification for display; e.g. "(0.37) cliff, drop, drop-off".
@@ -106,7 +110,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
     
     
-    
+    // image picker functions
     @IBAction func CameraTapped(_ sender: Any) {
         let imagePicker = UIImagePickerController()
         imagePicker.delegate = self
@@ -144,6 +148,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         picker.dismiss(animated: true, completion: nil)
     }
     
+    // passing data between ViewControllers using segues
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == "photoToResult" {

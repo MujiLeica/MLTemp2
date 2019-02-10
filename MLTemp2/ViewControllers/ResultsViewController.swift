@@ -6,6 +6,9 @@
 //  Copyright © 2019 CHONG LIU. All rights reserved.
 //
 
+
+//  ResultViewController displays the 3 most confident results
+//  User can tap on each result to see metadata page
 import UIKit
 
 class ResultsViewController: UIViewController {

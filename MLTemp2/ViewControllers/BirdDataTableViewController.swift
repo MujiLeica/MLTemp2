@@ -6,6 +6,8 @@
 //  Copyright © 2019 CHONG LIU. All rights reserved.
 //
 
+//  This ViewController displays a tableview to show all bird species with a profile image and direct user to WebViewController to show metadata of a particular species
+
 import UIKit
 
 var birdSpecies = ["Australian King Parrot", "Australian Magpie", "Australian Raven", "Eastern Koel", "Myna", "Crested Pigeon", "Crimson Rosella", "Eastern Spinebill", "Eastern Yellow Robin", "Galah", "Grey Butcherbird", "Grey Fantail", "House Sparrow", "Laughing Kookaburra", "Little Wattlebird", "Magpie-lark", "New Holland Honeyeater", "Noisy Miner", "Pied Currawong", "Rainbow Lorikeet", "Red Wattlebird", "Red-Browed Finch", "Red-whiskered Bulbul", "Silvereye", "Spotted Pardalote", "Spotted Turtle Dove", "Sulphur-crested Cockatoo", "Superb Fairy-wren", "Willie Wagtail", "Yellow-tailed Black-Cockatoo"]
@@ -31,7 +33,7 @@ class BirdDataTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-
+    // table view setup
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return birdSpecies.count

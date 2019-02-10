@@ -6,6 +6,9 @@
 //  Copyright © 2019 CHONG LIU. All rights reserved.
 //
 
+
+//  SampleCell used by tableview
+
 import UIKit
 
 class SampleCellTableViewCell: UITableViewCell {

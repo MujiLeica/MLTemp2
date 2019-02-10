@@ -6,6 +6,8 @@
 //  Copyright © 2019 CHONG LIU. All rights reserved.
 //
 
+//  WebViewController displays the webpage showing metadata about a particular species
+
 import UIKit
 import WebKit
 
