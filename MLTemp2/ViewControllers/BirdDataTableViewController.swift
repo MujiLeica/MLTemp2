@@ -21,7 +21,7 @@ class BirdDataTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationItem.title = "Bird Species"
+        navigationItem.title = "Common Urban Birds"
         navigationController?.navigationBar.prefersLargeTitles = true
 
         // Uncomment the following line to preserve selection between presentations
