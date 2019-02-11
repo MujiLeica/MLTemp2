@@ -7,7 +7,7 @@
 //
 
 
-//  ResultViewController displays the 3 most confident results
+//  ResultViewController displays the top 3 most confident results
 //  User can tap on each result to see metadata page
 import UIKit
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		631D6D4B2210F404002C8B01 /* Crop.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 631D6D4A2210F404002C8B01 /* Crop.mlmodel */; };
 		634EE3AC22020359008724E7 /* SampleCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634EE3AB22020359008724E7 /* SampleCellTableViewCell.swift */; };
 		634EE3CD22020E55008724E7 /* New Holland Honeyeater.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 634EE3AF22020E52008724E7 /* New Holland Honeyeater.jpg */; };
 		634EE3CE22020E55008724E7 /* Yellow-tailed Black-Cockatoo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 634EE3B022020E52008724E7 /* Yellow-tailed Black-Cockatoo.jpg */; };
@@ -18,7 +19,7 @@
 		634EE3D422020E55008724E7 /* Superb Fairy-wren.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 634EE3B622020E53008724E7 /* Superb Fairy-wren.jpg */; };
 		634EE3D522020E55008724E7 /* Australian King Parrot.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 634EE3B722020E53008724E7 /* Australian King Parrot.jpg */; };
 		634EE3D622020E55008724E7 /* Pied Currawong.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 634EE3B822020E53008724E7 /* Pied Currawong.jpg */; };
-		634EE3D722020E55008724E7 /* Spotted Dove.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 634EE3B922020E53008724E7 /* Spotted Dove.jpg */; };
+		634EE3D722020E55008724E7 /* Spotted Turtle Dove.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 634EE3B922020E53008724E7 /* Spotted Turtle Dove.jpg */; };
 		634EE3D822020E55008724E7 /* Willie Wagtail.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 634EE3BA22020E53008724E7 /* Willie Wagtail.jpg */; };
 		634EE3D922020E55008724E7 /* House Sparrow.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 634EE3BB22020E53008724E7 /* House Sparrow.jpg */; };
 		634EE3DA22020E55008724E7 /* Crested Pigeon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 634EE3BC22020E53008724E7 /* Crested Pigeon.jpg */; };
@@ -27,7 +28,7 @@
 		634EE3DD22020E55008724E7 /* Eastern Spinebill.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 634EE3BF22020E54008724E7 /* Eastern Spinebill.jpg */; };
 		634EE3DE22020E55008724E7 /* Grey Butcherbird.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 634EE3C022020E54008724E7 /* Grey Butcherbird.jpg */; };
 		634EE3DF22020E55008724E7 /* Sulphur-crested Cockatoo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 634EE3C122020E54008724E7 /* Sulphur-crested Cockatoo.jpg */; };
-		634EE3E022020E55008724E7 /* Red-browed Finch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 634EE3C222020E54008724E7 /* Red-browed Finch.jpg */; };
+		634EE3E022020E55008724E7 /* Red-Browed Finch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 634EE3C222020E54008724E7 /* Red-Browed Finch.jpg */; };
 		634EE3E122020E55008724E7 /* Australian Magpie.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 634EE3C322020E54008724E7 /* Australian Magpie.jpg */; };
 		634EE3E222020E55008724E7 /* Red-whiskered Bulbul.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 634EE3C422020E54008724E7 /* Red-whiskered Bulbul.jpg */; };
 		634EE3E322020E55008724E7 /* Crimson Rosella.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 634EE3C522020E54008724E7 /* Crimson Rosella.jpg */; };
@@ -50,10 +51,10 @@
 		63E4DFD321CB89B200A1782D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63E4DFD121CB89B200A1782D /* Main.storyboard */; };
 		63E4DFD521CB89B300A1782D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63E4DFD421CB89B300A1782D /* Assets.xcassets */; };
 		63E4DFD821CB89B300A1782D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63E4DFD621CB89B300A1782D /* LaunchScreen.storyboard */; };
-		63E4DFE021CB8BB400A1782D /* BirdClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 63E4DFDF21CB8BB400A1782D /* BirdClassifier.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		631D6D4A2210F404002C8B01 /* Crop.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Crop.mlmodel; sourceTree = "<group>"; };
 		634EE3AB22020359008724E7 /* SampleCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleCellTableViewCell.swift; sourceTree = "<group>"; };
 		634EE3AF22020E52008724E7 /* New Holland Honeyeater.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "New Holland Honeyeater.jpg"; sourceTree = "<group>"; };
 		634EE3B022020E52008724E7 /* Yellow-tailed Black-Cockatoo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Yellow-tailed Black-Cockatoo.jpg"; sourceTree = "<group>"; };
@@ -65,7 +66,7 @@
 		634EE3B622020E53008724E7 /* Superb Fairy-wren.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Superb Fairy-wren.jpg"; sourceTree = "<group>"; };
 		634EE3B722020E53008724E7 /* Australian King Parrot.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Australian King Parrot.jpg"; sourceTree = "<group>"; };
 		634EE3B822020E53008724E7 /* Pied Currawong.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Pied Currawong.jpg"; sourceTree = "<group>"; };
-		634EE3B922020E53008724E7 /* Spotted Dove.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Spotted Dove.jpg"; sourceTree = "<group>"; };
+		634EE3B922020E53008724E7 /* Spotted Turtle Dove.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Spotted Turtle Dove.jpg"; sourceTree = "<group>"; };
 		634EE3BA22020E53008724E7 /* Willie Wagtail.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Willie Wagtail.jpg"; sourceTree = "<group>"; };
 		634EE3BB22020E53008724E7 /* House Sparrow.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "House Sparrow.jpg"; sourceTree = "<group>"; };
 		634EE3BC22020E53008724E7 /* Crested Pigeon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Crested Pigeon.jpg"; sourceTree = "<group>"; };
@@ -74,7 +75,7 @@
 		634EE3BF22020E54008724E7 /* Eastern Spinebill.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Eastern Spinebill.jpg"; sourceTree = "<group>"; };
 		634EE3C022020E54008724E7 /* Grey Butcherbird.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Grey Butcherbird.jpg"; sourceTree = "<group>"; };
 		634EE3C122020E54008724E7 /* Sulphur-crested Cockatoo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Sulphur-crested Cockatoo.jpg"; sourceTree = "<group>"; };
-		634EE3C222020E54008724E7 /* Red-browed Finch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Red-browed Finch.jpg"; sourceTree = "<group>"; };
+		634EE3C222020E54008724E7 /* Red-Browed Finch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Red-Browed Finch.jpg"; sourceTree = "<group>"; };
 		634EE3C322020E54008724E7 /* Australian Magpie.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Australian Magpie.jpg"; sourceTree = "<group>"; };
 		634EE3C422020E54008724E7 /* Red-whiskered Bulbul.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Red-whiskered Bulbul.jpg"; sourceTree = "<group>"; };
 		634EE3C522020E54008724E7 /* Crimson Rosella.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Crimson Rosella.jpg"; sourceTree = "<group>"; };
@@ -99,7 +100,6 @@
 		63E4DFD421CB89B300A1782D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63E4DFD721CB89B300A1782D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63E4DFD921CB89B300A1782D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		63E4DFDF21CB8BB400A1782D /* BirdClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = BirdClassifier.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,10 +137,10 @@
 				634EE3B822020E53008724E7 /* Pied Currawong.jpg */,
 				634EE3B422020E53008724E7 /* Rainbow Lorikeet.jpg */,
 				634EE3CC22020E55008724E7 /* Red Wattlebird.jpg */,
-				634EE3C222020E54008724E7 /* Red-browed Finch.jpg */,
+				634EE3C222020E54008724E7 /* Red-Browed Finch.jpg */,
 				634EE3C422020E54008724E7 /* Red-whiskered Bulbul.jpg */,
 				634EE3B322020E53008724E7 /* Silvereye.jpg */,
-				634EE3B922020E53008724E7 /* Spotted Dove.jpg */,
+				634EE3B922020E53008724E7 /* Spotted Turtle Dove.jpg */,
 				634EE3C822020E55008724E7 /* Spotted Pardalote.jpg */,
 				634EE3C122020E54008724E7 /* Sulphur-crested Cockatoo.jpg */,
 				634EE3B622020E53008724E7 /* Superb Fairy-wren.jpg */,
@@ -183,9 +183,9 @@
 		63E4DFCC21CB89B200A1782D /* MLTemp2 */ = {
 			isa = PBXGroup;
 			children = (
-				63E4DFDF21CB8BB400A1782D /* BirdClassifier.mlmodel */,
 				63DBEB872209D29A00CA3495 /* Bird17.mlmodel */,
 				63DBEB892209FD1F00CA3495 /* Bird29.mlmodel */,
+				631D6D4A2210F404002C8B01 /* Crop.mlmodel */,
 				63E4DFCD21CB89B200A1782D /* AppDelegate.swift */,
 				63BE6530220AE653003BC1E2 /* ViewControllers */,
 				63E4DFD121CB89B200A1782D /* Main.storyboard */,
@@ -273,14 +273,14 @@
 				634EE3DF22020E55008724E7 /* Sulphur-crested Cockatoo.jpg in Resources */,
 				634EE3E922020E55008724E7 /* Eastern Yellow Robin.jpg in Resources */,
 				634EE3E122020E55008724E7 /* Australian Magpie.jpg in Resources */,
-				634EE3E022020E55008724E7 /* Red-browed Finch.jpg in Resources */,
+				634EE3E022020E55008724E7 /* Red-Browed Finch.jpg in Resources */,
 				634EE3E822020E55008724E7 /* Magpie-lark.jpg in Resources */,
 				634EE3D422020E55008724E7 /* Superb Fairy-wren.jpg in Resources */,
 				634EE3CF22020E55008724E7 /* Australian Raven.jpg in Resources */,
 				63E4DFD521CB89B300A1782D /* Assets.xcassets in Resources */,
 				634EE3D822020E55008724E7 /* Willie Wagtail.jpg in Resources */,
 				634EE3D622020E55008724E7 /* Pied Currawong.jpg in Resources */,
-				634EE3D722020E55008724E7 /* Spotted Dove.jpg in Resources */,
+				634EE3D722020E55008724E7 /* Spotted Turtle Dove.jpg in Resources */,
 				634EE3DA22020E55008724E7 /* Crested Pigeon.jpg in Resources */,
 				634EE3D222020E55008724E7 /* Rainbow Lorikeet.jpg in Resources */,
 				63E4DFD321CB89B200A1782D /* Main.storyboard in Resources */,
@@ -302,8 +302,8 @@
 				63DBEB882209D29A00CA3495 /* Bird17.mlmodel in Sources */,
 				63DBEB8A2209FD1F00CA3495 /* Bird29.mlmodel in Sources */,
 				637F17CB21F9FA9A0022BFAE /* WebViewController.swift in Sources */,
+				631D6D4B2210F404002C8B01 /* Crop.mlmodel in Sources */,
 				637F17C921F9F8540022BFAE /* BirdDataTableViewController.swift in Sources */,
-				63E4DFE021CB8BB400A1782D /* BirdClassifier.mlmodel in Sources */,
 				637C930921CFC88600AEEC11 /* LiveRecognitionViewController.swift in Sources */,
 				63E4DFCE21CB89B200A1782D /* AppDelegate.swift in Sources */,
 				63AF384521FF13A300F2DD1B /* HomeScreenViewController.swift in Sources */,

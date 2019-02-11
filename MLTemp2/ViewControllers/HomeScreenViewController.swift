@@ -7,8 +7,8 @@
 //
 
 //  This ViewController is the home screen of the App.
-//  It displays different recognition options and ask user's location
-//  in order to load the most accuracy model in other ViewControllers
+//  It displays different recognition options and ask user for location permission
+//  in order to load the most accuracy model for recognition in other ViewControllers
 
 import UIKit
 import CoreLocation

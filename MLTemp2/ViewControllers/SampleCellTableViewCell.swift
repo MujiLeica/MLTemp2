@@ -7,7 +7,7 @@
 //
 
 
-//  SampleCell used by tableview
+//  SampleCell used by tableview in BirdDataTableViewController
 
 import UIKit
 

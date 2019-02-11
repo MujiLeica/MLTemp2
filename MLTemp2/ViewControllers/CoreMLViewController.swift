@@ -6,9 +6,9 @@
 //  Copyright © 2018 CHONG LIU. All rights reserved.
 //
 
-//  This ViewController performs offline image recognition
+//  This ViewController performs offline image recognition using Core ML
 //  Users can choose a photo from the photo library or take a new one
-//  The camera function is pretty basic in the App
+//  The camera function is just a basic camera
 //  because the iPhone's native camera is pretty good already.
 //  There's no point to reinvent the wheel to reproduce iPhone native camera
 //  Users are encouraged to use iPhones native camera to take photos and do the recognition process in the app because all of the native camera features like zoom, grid, flash, brightness and so on
@@ -40,7 +40,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     var thirdConfidence: Float = 0
     
     // we can load the most accurate model according to user's location
-    var birdClassificationModel = Bird29()
+    var birdClassificationModel = Crop()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -139,7 +139,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 //        present(imagePicker, animated: true, completion: nil)
     }
     
-    
+    // image picker controll setup
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let selectedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage{
             imageView.image = selectedImage

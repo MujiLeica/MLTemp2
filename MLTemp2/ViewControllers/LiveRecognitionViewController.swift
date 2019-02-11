@@ -50,13 +50,13 @@ class LiveRecognitionViewController: UIViewController, AVCaptureVideoDataOutputS
         captureSession.addOutput(dataOutput)
     }
 
-    // perform coreML request everytime the camera capture a frame
+    // perform coreML request everytime camera generates a new frame
     func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
         
         guard let pixelBuffer: CVPixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer) else { return }
         
         // select the coreML model according to user's location
-        guard let model = try? VNCoreMLModel(for: Bird29().model) else { return }
+        guard let model = try? VNCoreMLModel(for: Crop().model) else { return }
         
         // fire up the request
         let request = VNCoreMLRequest(model: model) { (finishedReq, err) in
@@ -69,6 +69,7 @@ class LiveRecognitionViewController: UIViewController, AVCaptureVideoDataOutputS
             
             self.confidence = Int ( firstObservation.confidence * 100 )
             
+            // do not display result when confidence is below 50%
             var message = ""
             if self.confidence >= 50 { message = "\(firstObservation.identifier) " + "\(self.confidence)" + "%"}
             else { message = "Thinking..."}
@@ -84,6 +85,7 @@ class LiveRecognitionViewController: UIViewController, AVCaptureVideoDataOutputS
             
         }
         
+        // stop after 85% confident
         if (self.confidence <= 85) {
             try? VNImageRequestHandler(cvPixelBuffer: pixelBuffer, options: [:]).perform([request])
         }
