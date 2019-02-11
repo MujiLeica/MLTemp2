@@ -442,7 +442,7 @@
                                     <constraint firstAttribute="height" constant="50" id="91e-eN-7R5"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
-                                <state key="normal" title="Live Image Recognition">
+                                <state key="normal" title="Live Recognition">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
