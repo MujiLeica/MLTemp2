@@ -22,7 +22,7 @@ class BirdDataTableViewController: UITableViewController {
         super.viewDidLoad()
         
         navigationItem.title = "Common Urban Birds"
-        navigationController?.navigationBar.prefersLargeTitles = true
+        //navigationController?.navigationBar.prefersLargeTitles = true
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
